@@ -1,0 +1,20 @@
+ var http_request = new XMLHttpRequest();
+ var url = "https://web.archive.org/web/19990117014248/http://www.petz.com/central/default.asp"; // Welcome to the New Petz.com!
+
+ // pobierz Petz 3
+ http_request.onreadystatechange = handle_json;
+ http_request.open("GET", url);
+ http_request.send(null);
+
+ function handle_json() {
+        if (http_request.readyState == 4) {
+                if (http_request.status == 200) {
+                        var json_data = http_request.responseText; // pobranie tekstu
+                        var the_object = eval("("+json_data+")");  // zamiana tekstu na obiekt JSON
+                } else {
+                        alert('Wystąpił problem z wybranym adresem URL.');
+                }
+                http_request = null;
+        }
+ }
+{//Windows} 
