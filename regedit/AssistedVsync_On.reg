@@ -1,0 +1,4 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\Team17SoftwareLTD\WormsArmageddon\Options]
+"AssistedVsync"=dword:00000001
