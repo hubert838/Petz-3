@@ -1,0 +1,5 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\Petz3]
+"AssistedVsync"=dword:00000000
+
